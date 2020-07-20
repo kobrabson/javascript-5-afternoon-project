@@ -66,12 +66,16 @@ const dallin = new Employee (`Dallin`, `Anderson`)
 //Code Here
 
 class Manager extends Employee {
-  constructor(first_name, last_name, email, age, reports){
+  constructor(first_name, last_name, email, age){
     super(first_name, last_name, email, age)
     this.reports = []
   }
   hire(newEmployee){
-    
+    this.reports.push(newEmployee)
+  }
+  fire(index){
+   this.reports.splice(index, 1)
+   
   }
 }
 
