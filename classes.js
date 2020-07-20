@@ -162,4 +162,10 @@ class ProgressiveManager extends Manager {
 
 //Code Here
 
+class Machine {
+  widgets_made_count = 0
+  wear_and_tear_count = 0
+  needs_reboot = false
+}
+
 
