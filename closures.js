@@ -94,6 +94,18 @@ function makeCounter(){
 
 function counterFactory(value) {
   // Code here.
+let num = value
+return {
+  inc: function (s){
+    ++num
+return num
+  },
+  dec: function (){
+    --num
+    return num
+  }
+}
+
 
   return {
 
