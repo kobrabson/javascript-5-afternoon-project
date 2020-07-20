@@ -30,6 +30,7 @@ const inner = outer()
 
 //Code Here
 
+inner ()
 
 
 ////////// PROBLEM 2 //////////
@@ -53,7 +54,8 @@ function callFriend(name) {
 
 //Code Here
 
-
+const callJake = callFriend(`Jake`)
+callJake(435-215-9248)
 
 ////////// PROBLEM 3 //////////
 
@@ -63,14 +65,19 @@ function callFriend(name) {
 
 //Code Here
 
-
+function makeCounter(){
+  let nums = 0
+  return function(){
+    return ++nums
+  }
+}
 
 //Uncomment this once you make your function
-//   var count = makeCounter();
-//   count(); // 1
-//   count(); // 2
-//   count(); // 3
-//   count(); // 4
+  var count = makeCounter();
+  count(); // 1
+  count(); // 2
+  count(); // 3
+  count(); // 4
 
 
 
