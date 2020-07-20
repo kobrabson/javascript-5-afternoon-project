@@ -24,7 +24,7 @@ function outer() {
   
 // Code Here
 
-
+const inner = outer()
 
 //Once you do that, invoke inner.
 
