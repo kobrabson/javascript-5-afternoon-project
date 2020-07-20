@@ -192,6 +192,12 @@ function secretNumber() {
 
   return {
     // Code here
+    addToSecret (num){
+      return secret += num
+    },
+    takeAwayFromSecret(num){
+      return secret -= num
+    }
   };
 }
 
